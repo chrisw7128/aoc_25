@@ -273,7 +273,5 @@ def combine_p2_all(l1, l2, l3, l4, l5):
 
     print(f'Part 2 total invalid strs: {total}')
 
-    len_5 = [i for i in deduped_int_list if len(str(i)) == 5]
-
 
 combine_p2_all(count_one, count_two, count_three, count_four, count_five)
