@@ -2,7 +2,6 @@ import re
 from dataclasses import dataclass
 
 def get_data():
-    my_index = 0
     turns = []
     with open("day_01_input.txt", "r") as f:
         data = [line.strip() for line in f]
@@ -15,7 +14,6 @@ def get_data():
     for item in data:
         m = re.match(r"(.)?(.*)", item)
         dir, amount = m.groups()
-        my_index += 1
         turns.append(Turn(dir=dir, amount=int(amount)))
 
     return turns
