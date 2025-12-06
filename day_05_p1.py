@@ -16,7 +16,7 @@ def construct_fresh_ranges(fresh_ingredients):
         start = int(range.split('-')[0])
         end = int(range.split('-')[1])
         ranges.append(Ranges(start=start, end=end))
-        
+
     return ranges
 
 fresh_ingredients_ranges = construct_fresh_ranges(fresh_ingredients)

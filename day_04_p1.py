@@ -31,7 +31,7 @@ def count_adjacent_connections(data):
                     above_right = prev_row[i+1:i+2]
                     if above_right == '@':
                         connections += 1
-                
+
                 if next_row:           
                     below_left = next_row[i-1:i]
                     if below_left == '@':
